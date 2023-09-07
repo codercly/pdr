@@ -1,0 +1,7 @@
+Part 5
+
+- [x]  Add Search Route to AppRoutes.js
+- [x]  Add Search function to foodService.js
+- [x]  Use Search Inside HomePage.js
+- [x]  Add Search Component
+    - [x]  Add CSS
