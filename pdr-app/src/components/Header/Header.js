@@ -2,15 +2,14 @@ import React from "react"
 import classes from './header.module.css'// se tiver dois nomes de classes dentro de diferentes componentes não ira afetar um ao outro
 import { Link } from "react-router-dom";
 import { useCart } from "../../hooks/useCart";
+import { useAuth } from "../../hooks/useAuth";
 export function Header() {
     //para o login
-    const user = {
-        name: 'John',
-    };
+    const {user, logout} = useAuth()
     //para o cart
     const { cart } = useCart()
 
-    const logout = () => { }
+    
 
     return (
         <header className={classes.header}>
